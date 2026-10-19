@@ -1,0 +1,8 @@
+blank_issues_enabled: false
+contact_links:
+  - name: Before You Build
+    url: https://github.com/Auno-World#before-you-build
+    about: Tips for picking the right path and using Aūno tools at your company.
+  - name: Report A Security Problem
+    url: https://github.com/Auno-World/.github/blob/main/SECURITY.md
+    about: Please report security problems privately, not as an issue.

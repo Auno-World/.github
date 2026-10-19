@@ -1,0 +1,26 @@
+name: Suggest An Idea
+description: A new feature, sample, or improvement.
+title: "Idea: "
+labels: ["idea"]
+body:
+  - type: textarea
+    id: problem
+    attributes:
+      label: What Would This Help With
+      description: The situation you're in and what gets in the way today.
+    validations:
+      required: true
+  - type: textarea
+    id: idea
+    attributes:
+      label: Your Idea
+      description: What you'd like to see. Sketches and screenshots are welcome.
+    validations:
+      required: true
+  - type: checkboxes
+    id: privacy
+    attributes:
+      label: Before You Submit
+      options:
+        - label: I removed any company names, documents, or private information.
+          required: true

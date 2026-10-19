@@ -1,0 +1,48 @@
+name: Report A Bug
+description: Something isn't working the way it should.
+title: "Bug: "
+labels: ["bug"]
+body:
+  - type: textarea
+    id: what
+    attributes:
+      label: What Happened
+      description: What you saw, and what you expected instead.
+    validations:
+      required: true
+  - type: textarea
+    id: steps
+    attributes:
+      label: Steps To Repeat It
+      description: The fewer steps the better. Use the sample content if you can.
+      value: |
+        1.
+        2.
+        3.
+    validations:
+      required: true
+  - type: dropdown
+    id: path
+    attributes:
+      label: How You Used It
+      options:
+        - Opened the page directly
+        - Edit screen
+        - AI prompt
+        - Python script
+        - Coding agent
+        - Other
+    validations:
+      required: true
+  - type: input
+    id: browser
+    attributes:
+      label: Browser And Device
+      description: For example, Chrome on a Mac, or Safari on an iPhone.
+  - type: checkboxes
+    id: privacy
+    attributes:
+      label: Before You Submit
+      options:
+        - label: I removed any company names, documents, or private information.
+          required: true
